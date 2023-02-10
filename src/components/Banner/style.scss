@@ -1,0 +1,18 @@
+.banner-container {
+  background: url(../../assets/banner_bkg.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 223px;
+  height: 309px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-text {
+  position: absolute;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-weight: 500;
+}
