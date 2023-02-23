@@ -5,8 +5,10 @@ import { Header } from "../../components/Header";
 export function DefaultLayout() {
     return(
         <>
+        <div className="container">
         <Header/>
         <Outlet/>
+        </div>
         <Footer/>
         </>
     )

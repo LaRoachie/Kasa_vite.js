@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { HomePage, loader as homeLoader } from './pages/home/home'
-import './index.css'
+import './styles/settings/settings.scss'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { DefaultLayout } from './layouts/default/default_layout'
 import { ErrorPage } from './pages/error/error'
 import { AboutPage } from './pages/about/about'
-import { LocationPage } from './pages/location/location'
+import { LocationPage, loader as locationLoader } from './pages/location/location'
 
 const router = createBrowserRouter([
   {
@@ -23,8 +23,9 @@ const router = createBrowserRouter([
         element:<AboutPage/>
       },
       {
-        path:"/location",
-        element:<LocationPage/>
+        path:"/location/:logementId",
+        element:<LocationPage/>,
+        loader:locationLoader
       }
     ],
     errorElement:<ErrorPage/>

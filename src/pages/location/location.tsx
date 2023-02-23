@@ -1,18 +1,19 @@
 import { useLoaderData } from "react-router-dom";
+import { Location } from "../../_models/location";
 
 
 export function LocationPage() {
-	const logements= useLoaderData()
-	console.log(logements)
+	const logement:Location = useLoaderData() as Location
 	return (
 		<>
-            Appartement
+            <p>{logement.title}</p>
 		</>
 	)
 };
 
-export async function loader(){
-	return(
+export async function loader({params}){
+	const logements: Location[]=(
 		await import("../../assets/logements.json")
-	).default
+	).default as Location[]
+	return logements.find(logement => params.logementId === logement.id)
 }

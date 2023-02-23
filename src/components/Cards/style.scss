@@ -3,7 +3,9 @@
     width: 340px;
     height: 340px;
     border-radius: 10px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    // background: $linear-cards;
+    // background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    margin-bottom: 50px;
 
     &_title {
         position: absolute;
@@ -13,5 +15,27 @@
         font-size: 18px;
         font-weight: 500;
         margin: 0 0 20px 20px;
+        z-index: 1;
+    }
+
+    &_overlay {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        position: absolute;
+        top: 0;
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        opacity: 0.5;
+        transition: all 0.3s ease-out;
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+    &_cover {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
     }
 }
