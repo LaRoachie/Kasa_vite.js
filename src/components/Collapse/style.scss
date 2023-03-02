@@ -50,3 +50,18 @@
     transform: rotate(180deg);
     transition: 0.2s ease-in-out;
 }
+
+@media screen and (max-width: 769px) {
+    .collapse_visible{
+        height: 30px;
+    }
+    .collapse_visible h3{
+        font-size: 13px;
+    }
+    .collapse_toggle {
+        font-size: 12px;
+    }
+    .chevron{
+        width: 15px;
+    }
+}

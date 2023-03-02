@@ -52,13 +52,46 @@
     &_details {
         display: flex;
         column-gap: 76px;
-.collapse{
-    margin: 0;
-}
+
+        .collapse {
+            margin: 0;
+        }
+
         & p {
             margin: 0;
             font-weight: 400;
         }
     }
 
+}
+
+@media screen and (max-width: 769px) {
+    .location_infos {
+        flex-direction: column;
+
+        &_left_title {
+            font-size: 18px;
+        }
+
+        &_right {
+            flex-direction: row-reverse;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+
+            &_host {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .star {
+        width: 15px;
+    }
+
+    .location_details{
+        flex-direction: column;
+        row-gap: 20px;
+    }
 }

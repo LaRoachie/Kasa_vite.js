@@ -18,3 +18,13 @@
         box-sizing: border-box;
     }
 }
+
+@media screen and (max-width: 769px) {
+    .tag{
+        flex-wrap: nowrap;
+    }
+    .tag span{
+        font-size: 10px;
+        min-width: 84px;
+    }
+}

@@ -8,6 +8,7 @@ import "./style.scss"
 
 export function AboutPage() {
     const about: About = useLoaderData() as About
+    console.log(about)
     return (
         <>
             <Banner src='src/assets/about_bkg.png' title="" />
@@ -17,4 +18,10 @@ export function AboutPage() {
             <Collapse title="Responsabilité">La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité etablis par nos services. En laissant une note aussi à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous orgnisons également des ateliers sur la sécurité domestique pour nos hôtes.</Collapse>
         </>
     )
+}
+
+export async function loader() {
+	return (
+		await import("../../assets/about.json")
+	).default
 }

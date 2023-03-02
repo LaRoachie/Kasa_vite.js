@@ -32,3 +32,21 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 769px) {
+    .carousel{
+        &_img{
+            height: 255px;
+            border-radius: 10px;
+        }
+        &_btn_left, &_btn_right{
+            top: 45%;
+        }
+        &_btn_left img, &_btn_right img{
+            height: 20px;
+        }
+        &_pagination{
+            font-size: 10px;
+        }
+    }
+}

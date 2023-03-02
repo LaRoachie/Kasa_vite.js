@@ -1,20 +1,38 @@
-.error-title{
+.error-title {
     font-size: 288px;
     color: var(--primary-color);
     font-weight: 700;
     text-align: center;
-    margin: 160px auto 60px;
+    margin: 140px auto 16px;
 }
-.error-message{
+
+.error-message {
     font-size: 36px;
     color: var(--primary-color);
     text-align: center;
-    margin-bottom: 180px;
+    margin-bottom: 124px;
 }
-.error-link{
+
+.error-link {
     display: block;
     font-size: 18px;
     color: var(--primary-color);
     text-align: center;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 769px) {
+    .error-title {
+        font-size: 96px;
+        margin-bottom: 20px;
+    }
+
+    .error-message {
+        font-size: 18px;
+        margin-bottom: 100px;
+    }
+
+    .error-link {
+        font-size: 14px;
+    }
 }

@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router-dom";
 
 import { Carousel } from "../../components/Carousel";
 import { Collapse } from "../../components/Collapse";
-import Rating from "../../components/Rating/Rating";
+import { Rating } from "../../components/Rating";
 import { Tag } from "../../components/Tag";
 import { Location } from "../../_models/location";
 

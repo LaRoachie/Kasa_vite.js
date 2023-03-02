@@ -4,7 +4,7 @@ interface RatingProps {
     score: any
 }
 
-export default function Rating({ score }: RatingProps) {
+export function Rating({ score }: RatingProps) {
     const stars = [1, 2, 3, 4, 5];
     return (
         <div className="rate-comp">

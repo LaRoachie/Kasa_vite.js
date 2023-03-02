@@ -1,6 +1,17 @@
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 60px;
+    width: 100%;
+}
+
+@media screen and (max-width: 769px) {
+    .header {
+        margin-bottom: 16px;
+
+        &_logo {
+            width: 145px;
+        }
+    }
 }

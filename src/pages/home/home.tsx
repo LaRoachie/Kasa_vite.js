@@ -8,7 +8,6 @@ import './style.scss';
 
 export function HomePage() {
 	const logements: Location[] = useLoaderData() as Location[]
-	console.log(logements)
 	return (
 		<>
 			<Banner src='src/assets/home_bkg.png' title='Chez vous, partout et ailleurs' />
