@@ -3,7 +3,7 @@ import './style.scss'
 
 export function ErrorPage() {
     return (
-        <div className='error'>
+        <div className='error container'>
             <Header />
             <p className="error-title">404</p>
             <p className='error-message'>Oups! La page que vous demandez n'existe pas.</p>

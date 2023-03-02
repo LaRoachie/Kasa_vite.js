@@ -1,0 +1,52 @@
+.collapse {
+    width: 100%;
+
+    &_visible {
+        box-sizing: border-box;
+        background: var(--primary-color);
+        color: #FFFFFF;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 52px;
+        padding: 13px 20px;
+        border-radius: 10px;
+        width: 100%;
+
+        & h3 {
+            font-size: 18px;
+        }
+    }
+
+    &_toggle {
+        // opacity: 0;
+        display: none;
+        color: var(--primary-color);
+        background: var(--secondary-color);
+        border-radius: 10px;
+        margin: 0;
+        padding: 30px 20px;
+        // transition: opacity 0.2s ease-in-out;
+        pointer-events: none;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.animated {
+    display: block;
+    // opacity: 1;
+    // transition: opacity 0.2s 0.2s ease-in-out;
+}
+
+.chevron {
+    width: 26px;
+    transform: rotate(0deg);
+    transition: 0.2s 0.2s ease-in-out;
+}
+
+.rotated {
+    transform: rotate(180deg);
+    transition: 0.2s ease-in-out;
+}

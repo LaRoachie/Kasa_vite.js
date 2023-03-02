@@ -10,7 +10,7 @@ export function HomePage() {
 	console.log(logements)
 	return (
 		<>
-			<Banner src='src/assets/home_bkg.png'/>
+			<Banner src='src/assets/home_bkg.png' title='Chez vous, partout et ailleurs'/>
 			<div className="location-container">
 				{logements.map(logement => <Link to={`/location/${logement.id}`}><Cards location={logement}/></Link>)}
 			</div>

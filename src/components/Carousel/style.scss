@@ -1,0 +1,34 @@
+.carousel {
+    position: relative;
+    margin: 0 auto 30px;
+
+    &_img {
+        width: 100%;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    &_btn_left {
+        position: absolute;
+        top: 40%;
+        left: 20px;
+        cursor: pointer;
+    }
+
+    &_btn_right {
+        position: absolute;
+        top: 40%;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    &_pagination {
+        font-size: 18px;
+        color: #FFFFFF;
+        position: absolute;
+        bottom: 28px;
+        width: 100%;
+        text-align: center;
+    }
+}
