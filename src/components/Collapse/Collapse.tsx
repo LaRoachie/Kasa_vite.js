@@ -1,4 +1,5 @@
 import { useState, ReactNode } from "react";
+
 import Chevron from "/src/assets/down.svg";
 
 import './style.scss'
@@ -19,11 +20,11 @@ export function Collapse({ title, children }: CollapseProps) {
         <div className="collapse">
             <div onClick={toggleState} className="collapse_visible">
                 <h3>{title}</h3>
-                <img className={toggle ? "chevron rotated" : "chevron"} src={Chevron} alt="chevron"/>
+                <img className={toggle ? "chevron rotated" : "chevron"} src={Chevron} alt="chevron" />
             </div>
-            <p className={toggle ? "collapse_toggle animated" : "collapse_toggle"}>
+            <div className={toggle ? "collapse_toggle animated" : "collapse_toggle"}>
                 {children}
-            </p>
+            </div>
         </div>
     );
 }
