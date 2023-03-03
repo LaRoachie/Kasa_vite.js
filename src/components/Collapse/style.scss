@@ -15,35 +15,31 @@
         width: 100%;
 
         & h3 {
-            font-size: 18px;
+            font-size: 1.125rem;
         }
     }
 
     &_toggle {
-        // opacity: 0;
         display: none;
         color: var(--primary-color);
         background: var(--secondary-color);
         border-radius: 10px;
         margin: 0;
         padding: 30px 20px;
-        // transition: opacity 0.2s ease-in-out;
         pointer-events: none;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 400;
     }
 }
 
 .animated {
     display: block;
-    // opacity: 1;
-    // transition: opacity 0.2s 0.2s ease-in-out;
 }
 
 .chevron {
     width: 26px;
     transform: rotate(0deg);
-    transition: 0.2s 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .rotated {
@@ -56,10 +52,10 @@
         height: 30px;
     }
     .collapse_visible h3{
-        font-size: 13px;
+        font-size: 0.813rem;
     }
     .collapse_toggle {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
     .chevron{
         width: 15px;

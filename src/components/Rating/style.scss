@@ -1,3 +1,9 @@
 .star{
     margin-left: 5px;
 }
+
+@media screen and (max-width: 769px) {
+    .star{
+        width: 15px;
+    }
+}

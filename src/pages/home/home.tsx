@@ -9,12 +9,12 @@ import './style.scss';
 export function HomePage() {
 	const logements: Location[] = useLoaderData() as Location[]
 	return (
-		<>
+		<div className="home-page">
 			<Banner src='src/assets/home_bkg.png' title='Chez vous, partout et ailleurs' />
 			<div className="location-container">
-				{logements.map(logement => <Link to={`/location/${logement.id}`}><Cards location={logement} /></Link>)}
+				{logements.map(logement => <Link key={logement.id} to={`/location/${logement.id}`}><Cards location={logement} /></Link>)}
 			</div>
-		</>
+		</div>
 	)
 };
 

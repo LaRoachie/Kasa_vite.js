@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { HomePage, loader as homeLoader } from './pages/home/home'
 import { DefaultLayout } from './layouts/default/default_layout'
 import { ErrorPage } from './pages/error/error'
-import { AboutPage } from './pages/about/about'
+import { AboutPage, loader as aboutLoader } from './pages/about/about'
 import { LocationPage, loader as locationLoader } from './pages/location/location'
 
 import './styles/settings/settings.scss'
@@ -22,7 +22,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <AboutPage />
+        element: <AboutPage />,
+        loader: aboutLoader
       },
       {
         path: "/location/:logementId",
