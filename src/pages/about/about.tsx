@@ -8,7 +8,6 @@ import "./style.scss"
 
 export function AboutPage() {
     const abouts: About[] = useLoaderData() as About[]
-    console.log(abouts)
     return (
         <div className="about-page">
             <Banner src='src/assets/about_bkg.png' title="" />
