@@ -18,10 +18,14 @@ export function Carousel({ pictures }: CarouselProps) {
 
     return (
         <div className="carousel">
-            <div onClick={prev} className="carousel_btn_left"><img src="/src/assets/prev.svg" alt="" /></div>
+            {pictures.length > 1 ? (<>
+                <div onClick={prev} className="carousel_btn_left"><img src="/src/assets/prev.svg" alt="" /></div>
+
+                <div className="carousel_pagination">{index + 1}/{pictures.length}</div>
+                <div onClick={next} className="carousel_btn_right"><img src="/src/assets/next.svg" alt="" /></div>
+            </>
+            ) : null}
             <img src={pictures[index]} alt="" className="carousel_img" />
-            <div className="carousel_pagination">{index + 1}/{pictures.length}</div>
-            <div onClick={next} className="carousel_btn_right"><img src="/src/assets/next.svg" alt="" /></div>
         </div>
     );
 }
